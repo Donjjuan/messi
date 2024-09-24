@@ -1,0 +1,224 @@
+/* General Styling */
+body {
+    font-family: 'Times New Roman', Times, serif; /* Fuente romana para todo el cuerpo */
+    background: url('fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header with Logos and Text */
+header {
+    position: relative;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 40px; /* Tamaño reducido de los escudos */
+    height: 40px; /* Tamaño reducido de los escudos */
+    object-fit: cover; /* Mantiene la proporción en un contenedor cuadrado */
+}
+
+.header-text {
+    font-size: 24px;
+    font-family: 'Georgia', serif; /* Fuente romana en el encabezado */
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 20px;
+    position: relative;
+}
+
+.text-blue {
+    color: #00f; /* Azul neón */
+    text-shadow: 
+        0 0 5px rgba(0, 0, 255, 0.7),
+        0 0 10px rgba(0, 0, 255, 0.5),
+        0 0 15px rgba(0, 0, 255, 0.4),
+        0 0 20px rgba(0, 0, 255, 0.3),
+        0 0 25px rgba(0, 0, 255, 0.2),
+        0 0 30px rgba(0, 0, 255, 0.1);
+}
+
+.text-red {
+    color: #f00; /* Rojo neón */
+    text-shadow: 
+        0 0 5px rgba(255, 0, 0, 0.7),
+        0 0 10px rgba(255, 0, 0, 0.5),
+        0 0 15px rgba(255, 0, 0, 0.4),
+        0 0 20px rgba(255, 0, 0, 0.3),
+        0 0 25px rgba(255, 0, 0, 0.2),
+        0 0 30px rgba(255, 0, 0, 0.1);
+}
+
+/* Container Styling */
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center; /* Centra el texto y elementos internos */
+}
+
+h1 {
+    color: #0056b3;
+    font-family: 'Georgia', serif; /* Fuente romana para los títulos */
+}
+
+/* Centering Images and Videos with Fixed Dimensions */
+img, video {
+    display: block;
+    width: 474px;
+    height: 355px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+img:hover, video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.7)) drop-shadow(0 0 10px rgba(0, 0, 255, 0.7));
+}
+
+/* Navigation Buttons */
+.navigation {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 12px 30px;
+    margin: 10px;
+    background-color: #0056b3;
+    color: white;
+    font-size: 16px;
+    font-family: 'Georgia', serif; /* Fuente romana para los botones */
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #004080;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), 0 0 15px rgba(0, 0, 255, 0.5);
+    transform: scale(1.1);
+}
+
+/* Buttons Styling */
+.prev-button, .next-button {
+    background-color: #0056b3;
+    text-decoration: none;
+    padding: 12px 30px;
+    margin: 10px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Georgia', serif; /* Fuente romana para los botones */
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.prev-button:hover, .next-button:hover {
+    background-color: #004080;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), 0 0 15px rgba(0, 0, 255, 0.5);
+    transform: scale(1.1);
+}
+
+/* Accordion Styling */
+.accordion-button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Georgia', serif; /* Fuente romana para los textos del acordeón */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.accordion-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), 0 0 15px rgba(0, 0, 255, 0.5);
+    transform: scale(1.1);
+}
+
+.accordion-content {
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Feedback Form Styling */
+.feedback-form {
+    margin-top: 30px;
+}
+
+.feedback-form h2 {
+    color: #0056b3;
+    text-align: center;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    resize: vertical;
+    font-family: 'Times New Roman', Times, serif; /* Fuente romana para textos del formulario */
+}
+
+.feedback-form button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Georgia', serif; /* Fuente romana para el botón del formulario */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+    background-color: #004080;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), 0 0 15px rgba(0, 0, 255, 0.5);
+}
+
+/* Neón RGB Animations */
+img:hover, video:hover, .navigation a:hover, .accordion-button:hover, .feedback-form button:hover {
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+@keyframes neonGlow {
+    0% {
+        box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #ff0000, 0 0 30px #ff0000;
+    }
+    100% {
+        box-shadow: 0 0 5px #0000ff, 0 0 10px #0000ff, 0 0 15px #0000ff, 0 0 20px #0000ff, 0 0 25px #0000ff, 0 0 30px #0000ff;
+    }
+}

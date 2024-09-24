@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía de Messi - Página 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo 1.png" alt="Escudo de Argentina">
+        <div class="header-text">
+            <span class="text-blue">THE</span> <span class="text-red">GOAT 🐐</span>
+        </div>
+        <img src="logo 2.png" alt="Escudo de Barcelona">
+    </header>
+
+    <div class="container">
+        <h1>Legado y Reflexiones</h1>
+
+        <!-- Video centrado en lugar de la imagen -->
+        <video width="474" height="355" controls>
+            <source src="v09044g40000cg1nph3c77ue2ofu91g0 (1).MOV" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+
+        <p>El legado de Lionel Messi es indiscutible. Con numerosos títulos de liga, copas nacionales e internacionales, y premios individuales, Messi ha establecido un estándar que pocos pueden igualar. Su impacto va más allá de los números, influyendo en el juego con su estilo único y su enfoque inigualable.</p>
+
+        <p>Su capacidad para superar obstáculos, su humildad y su dedicación al fútbol lo han convertido en un modelo a seguir para jóvenes futbolistas en todo el mundo. Messi no solo ha sido un referente en el campo de juego, sino también un embajador del deporte, promoviendo valores positivos y la excelencia.</p>
+
+        <p>En la reflexión final sobre su carrera, es evidente que Messi ha dejado una marca imborrable en el fútbol. Su viaje, desde sus humildes comienzos en Rosario hasta convertirse en una leyenda global, es un testimonio de su talento, perseverancia y pasión por el juego.</p>
+
+        <!-- Preguntas Encogibles -->
+        <div class="accordion">
+            <button class="accordion-button" onclick="toggleAccordion(this)">¿Por qué Messi es el mejor del mundo?</button>
+            <div class="accordion-content">
+                <p>Messi ha demostrado ser el mejor del mundo a lo largo de su carrera gracias a su increíble habilidad técnica, su visión de juego, y su consistencia en el rendimiento. Sus logros incluyen múltiples Balones de Oro y récords tanto a nivel de clubes como en selecciones.</p>
+            </div>
+
+            <button class="accordion-button" onclick="toggleAccordion(this)">¿Por qué Messi es mejor que Cristiano Ronaldo?</button>
+            <div class="accordion-content">
+                <p>La comparación entre Messi y Cristiano Ronaldo es frecuente, pero muchos argumentan que Messi es superior debido a su habilidad para crear jugadas y asistir a sus compañeros, además de sus logros colectivos con el FC Barcelona y la selección argentina.</p>
+            </div>
+        </div>
+
+        <!-- Recuadro para Escribir y Enviar -->
+        <div class="feedback-form">
+            <h2>Tu Opinión</h2>
+            <form action="submit_feedback.php" method="post">
+                <label for="feedback">¿Por qué crees que Messi es el mejor?</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Escribe tu opinión aquí..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="navigation">
+            <a href="page9.html" class="prev-button">Anterior</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const isActive = button.classList.contains('active');
+
+            // Toggle the active class
+            button.classList.toggle('active', !isActive);
+            content.style.display = isActive ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
